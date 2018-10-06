@@ -27,9 +27,13 @@ int main()
 
     //2. Loop the list and check the file for each
     for (auto cat: vecCat) {
-       bool ok =  fileExist (pathTrainDir + cat + ".dat");
+       auto str =  "svm_" + cat + ".dat";
+       str = pathTrainDir + str;
+      // std:: cout << str << endl;
+       bool ok =  fileExist (str);
        if (ok == false) {
            catMissing.push_back(cat);
+           std::cout << cat << endl;
        }
     }
 
