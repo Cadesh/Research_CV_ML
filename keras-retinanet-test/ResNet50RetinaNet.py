@@ -44,7 +44,7 @@ labels_to_names = {0: 'person', 1: 'bicycle', 2: 'car', 3: 'motorcycle', 4: 'air
 
 # load image
 
-image = read_image_bgr('image.jpg')
+image = read_image_bgr('figure_1.jpg')
 
 # copy to draw on
 draw = image.copy()
